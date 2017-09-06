@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Archivo+Black|Poiret+One|Poppins" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+	<title>Engines</title>
+</head>
+
+<style type="text/css">
+    body{ 
+    background:url();
+        background-repeat: no-repeat;
+        height:1000px;
+        
+    }
+    #car{
+    position: absolute;
+        margin-left: 800px;
+        height:800px;
+        margin-top:350px;
+
+    }
+    
+    #car2{
+    position: absolute;
+        margin-left: 700px;
+    }
+    
+    #car3{
+        position: absolute;
+        margin-left: 700px;
+        margin-top: 700px;
+    }
+    .text{
+    background: rgba(255,255,255,.6);
+    width:600px;
+    height: 850px;
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    padding:10px;
+    margin-left:80px;
+    margin-top: 340px;
+    border-radius: 30px;
+    color:black;
+    box-shadow: 3px 4px 3px rgba(0,0,0,.8);
+}
+    .DOE {
+        background-color:rgba(28,174,17,0);
+        position:absolute;
+        color:black;
+        height:100px;
+        width:600px;
+        font-size:50px;
+        margin-left: 80px;
+        font-family: 'Poiret One', cursive;
+    } 
+    .DOE h1 {
+        text-shadow:3px 4px 3px rgba(0,0,0,.8); 
+        
+        }
+    
+    
+  .modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+    .modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+    
+    a{
+    text-decoration: none;
+    color:greenyellow;
+    }
+    
+    
+    .modalDialog > div {
+	width: 550px;
+    height:310px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#000, #000);
+	background: -webkit-linear-gradient(#000, #000);
+	background: -o-linear-gradient(#000, #000);
+}
+    
+    .close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+  .close:hover { background: #00d9ff; }
+    .header{
+        height:100px;
+    }
+</style>
+<body>
+    <div id="car"><img src="images/car.png"></div>
+    <div id="car3"><img src="images/spec.png" width="700"></div>
+    <div id="car2"><img src="images/car2.jpg" width="800"></div>
+    
+ <header class="header">
+        <nav class="nav">
+            <ul>
+            <li><a href="index.html"><img src="images/home.png" height="75" width="75"></a></li>
+			<li><a href="transformation.html"><img src="images/steerw.png"height="75" width="75" ></a></li>
+			<li><a href="ai.html"><img src="images/ai.png" height="75" width="75"></a></li>
+            <li><a href="engine.html"><img src="images/engine.png"height="75" width="75"></a></li>
+            
+		</ul>
+        </nav>
+    
+</header>
+    
+<div class="DOE"><h1>Disposal of engines</h1></div> 
+  <div class="text">
+    
+    <p> Tesla and Volkswagen each have plans to produce more than a million electric vehicles per year by 2025. On Wednesday, Volvo announced that it would phase out the traditional combustion engine and that all of its new models starting in 2019 would be either hybrids or entirely battery-powered.
+
+Skeptics argue that these moves are mostly marginal. Exxon Mobil, which is studying the threat that electric cars could pose to its business model, still expects that plug-in vehicle sales will grow slowly, to just 10 percent of new sales in the United States by 2040, with little impact on global oil use. The federal Energy Information Administration projects a similarly sluggish uptick.
+
+The Bloomberg forecast is far more aggressive, projecting that plug-in hybrids and all-electric vehicles will make up 54 percent of new light-duty sales globally by 2040, outselling their combustion engine counterparts.
+
+The reason? Batteries. Since 2010, the average cost of lithium-ion battery packs has plunged by two-thirds, to around $300 per kilowatt-hour. The Bloomberg report sees that falling to $73 by 2030, without any significant technological breakthroughs, as companies like Tesla increase battery production in massive factories, optimize the design of battery packs and improve chemistries.
+
+For the next decade, the report notes, electric cars will remain reliant on government incentives and sales mandates in places like Europe, China and California. But as automakers introduce a greater variety of models and lower costs, electric cars will reach a point where they can stand on their own.
+
+Still, this outcome is hardly guaranteed. Governments could scale back their incentives before plug-in vehicles become fully competitive — many states are already beginning to tax electric cars. Battery manufacturers could face material shortages or production problems that hinder their ability to slash costs. And an unforeseen technology failure, such as widespread battery fires, could halt progress.
+
+“But we tried to be fairly conservative in our estimate of where battery prices are going,” Mr. McKerracher said, “and we don’t see barriers to electric vehicles’ becoming cost competitive very soon.”</p>
+
+           <a href="#openModal">Learn More About Electric Cars</a>
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/3SAxXUIre28?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        
+        
+    </div>
+</div>
+    </div>
+
+</body>
+</html>

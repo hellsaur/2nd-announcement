@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Poiret+One|Quicksand|Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+	<title>Transformation</title>
+</head>
+
+<style type="text/css">
+    *{
+        margin: 0;
+    }
+    body{
+       background-image: url(images/bg.jpg);
+        background-repeat: no-repeat;
+        background-color: navy;
+        
+    }
+    .header{
+        height:10px;
+    }
+    .SDC {
+        
+        letter-spacing:20px;
+        position:absolute;
+        color:white;
+        height:100px;
+        width:800px;
+        font-size:40px;
+        margin-top:10px;
+        margin-left: 580px;
+        font-family: 'Poiret One', cursive;
+        text-align: right;
+         text-shadow: 3px 4px 10px rgba(0,255,255,2);
+    } 
+
+    .modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+   
+}
+    .modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+        
+  
+}
+    a{
+    text-decoration: none;
+    color:deepskyblue;
+    text-shadow:3px 4px 3px rgba(0,0,0,.8);
+    margin-bottom: 60px;
+    }
+    
+    .modalDialog > div {
+	width: 550px;
+    height:310px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#000, #000);
+	background: -webkit-linear-gradient(#000, #000);
+	background: -o-linear-gradient(#000, #000);
+    
+    }
+    
+    .close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+    
+    .mySlides{
+        
+        position: absolute;
+        margin-left: 300px;
+        margin-top: 280px;
+        text-align:center;
+        box-shadow:3px 4px 3px rgba(255,255,255,.8);
+    }
+    .backButton{
+        position: absolute;
+        margin-left: 500px;
+        margin-top: 800px;
+        width:200px;
+        
+    }
+    
+    .forwardButton{
+        position: absolute;
+         width:200px;
+        margin-left: 700px;
+        margin-top: 800px;
+    }
+    .text{
+    position: absolute;
+    background: rgba(0,0,0,.6);
+    width:500px;
+    height: 140px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size:16px;
+    padding:10px;
+    margin-left:80px;
+    margin-top: 100px;
+    border-radius: 0px;
+    color:white;
+    
+}
+     #text2{
+    position: absolute;
+    background: rgba(0,0,0,.7);
+    width:200px;
+    height: 450px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size:16px;
+    padding:10px;
+    margin-left:80px;
+    margin-top: 300px;
+    border-radius: 0px;
+    color:white;
+    
+    }
+    footer{
+        position: absolute;
+        background-color: black;
+        margin-top:1000px;
+        height:100px;
+        width:100%;
+        z-index: 1;
+    }
+</style>
+<body>
+    
+  <header class="header">
+        <nav class="nav">
+            <ul>
+            <li><a href="index.html"><img src="images/home.png" height="75" width="75"></a></li>
+			<li><a href="transformation.html"><img src="images/steerw.png" height="75" width="75" ></a></li>
+			<li><a href="ai.html"><img src="images/ai.png" height="75" width="75"></a></li>
+            <li><a href="engine.html"><img src="images/engine.png" height="75" width="75"></a></li>
+		</ul>
+        </nav>
+      <div class="SDC"><h1>SELF DRIVING CARS</h1></div> 
+      <img class="mySlides" src="images/2.png" height="500" width="900">
+<img class="mySlides" src="images/1.jpg" height="500" width="900">
+<img class="mySlides" src="images/3.jpg" height="500" width="900">
+<img class="mySlides" src="images/4.jpg" height="500" width="900">
+<img class="mySlides" src="images/5.jpg" height="500" width="900">
+
+   <button class= "backButton" onclick="plusDivs(-1)">&#10094;</button>
+   <button class= "forwardButton" onclick="plusDivs(+1)">&#10095;</button>
+    
+        <div class="text">
+            <h2></h2>
+            <P>SELF-DRIVING CARS<br>
+                ONCE FOUND ONLY IN SCIENCE FICTION, SELF-DRIVING CARS ARE ABOUT TO BECOME A REALITY. THEY CAN HELP REDUCE ROAD ACCIDENTS, CLEAR UP TRAFFIC AND PROVIDE MOBILITY TO MORE PEOPLE.</P>
+        <a href="#openModal">See Tesla Self-Driving car</a>
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/mCj_C1NOVxw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+	</div>
+</div>
+    </div>
+      <div id="text2">
+          <p>
+          
+          The competition to lead this change is intense, coming from companies both inside and outside the industry. Fully autonomous cars are being tested on roads today, and the first commercially available semi-autonomous cars could be on the road in the next 1-2 years.
+<br>
+However, that innovation comes with risks. Turning control over to software could lead to new hacking vulnerabilities and other hazards—liability issues that companies can’t ignore. Cars that allow drivers to intervene in emergencies is a more likely scenario in the near future.
+          </p>
+      </div>
+   
+
+    </header>  
+      
+
+    
+    
+      
+    <script>
+    var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+    
+    </script>
+</body>
+    <footer>
+    
+    </footer>
+</html>
