@@ -1,0 +1,32 @@
+.header {
+    
+            
+     background: url("");
+     background-size: cover;
+     height: 700px;
+	}
+
+.nav ul{
+    display: inline-block;
+    background: rgba(0,0,0,0);
+    width: 100%;
+    word-spacing: 50px;
+    height: 30px;
+    font-size: 20pt;
+    list-style: none;
+    text-align: left;
+    
+    
+}
+
+ul li{
+    display: inline-block;
+    
+}
+
+li a{
+    font-family: 'Poiret One', cursive;
+    text-decoration: none;
+    
+}
+	

@@ -1,0 +1,88 @@
+*{
+    margin:0;
+}
+
+ .header {
+    background-color:black;
+     background-size: cover;
+     height: 700px;
+     width: 100%;
+	}
+
+.nav ul{
+    display: inline-block;
+    background: rgba(0,0,0,.2);
+    width: 97%;
+    word-spacing: 100px;
+    height: 30px;
+    font-size: 20pt;
+    list-style: none;
+    text-align: center;
+    
+    
+}
+
+ul li{
+    display: inline-block;
+}
+
+li a{
+    text-decoration: none;
+    color: azure;
+}
+	
+
+    
+    h4{
+    color:white;
+     }
+
+
+.text {
+    background: rgba(0,0,0,.8);
+    width: 60%;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:24.5px;
+    padding:10px;
+    box-shadow: 3px 4px 3px rgba(0,0,0,.8);
+    border-radius: 0px;
+    height: 300px;
+    margin:30px;
+}
+  table a{
+
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
+    text-shadow:3px 4px 3px rgba(255,255,255,.8);
+    }
+.table{
+    font-family: 'Julius Sans One', sans-serif;
+
+    width:880px;
+    background-color: rgba(0,0,0,.7);
+    margin-top:10px;
+    box-shadow: 3px 4px 3px rgba(0,0,0,.8);
+
+}
+.date{
+    letter-spacing: 10px;
+    color:white;
+    margin-left:0px;
+    margin-top: 280px; 
+    text-align:center;
+    font-size: 120px;
+    font-family: 'Archivo Black', sans-serif;
+    text-shadow: 3px 4px 3px rgba(0,0,0,.8);
+}
+.header{
+    background-image:url(images/road.jpg);
+    background-repeat: no-repeat;
+    background:cover;
+    box-shadow:3px 4px 3px rgba(0,0,0,.8);
+}
+#bg{
+    position: absolute;
+    z-index: -2;
+}
